@@ -6,7 +6,7 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {OrbitControls} from '@react-three/drei';
 import {AnimationMixer} from 'three';
 
-import { useUI } from '@/components/UIContext';
+import {useUI} from '@/components/UIContext';
 
 export const ModelViewer = () => {
     return (
@@ -21,7 +21,7 @@ export const ModelViewer = () => {
 };
 
 export const EthereumModel = () => {
-    const {spin, animate} = useUI();
+    const {spin, animate, setAnimate} = useUI();
     const myModel = useLoader(GLTFLoader, '/model/scene.gltf');
     const modelRef = useRef(null);
     const mixerRef = useRef(null);
@@ -40,6 +40,9 @@ export const EthereumModel = () => {
     useEffect(() => {
         if (mixerRef.current && animate) {
             mixerRef.current.time = 0;
+            setTimeout(() => {
+                setAnimate(false)
+            }, 10000)
         }
     }, [animate]);
     useFrame((state, delta) => {
