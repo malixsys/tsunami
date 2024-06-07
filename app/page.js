@@ -3,7 +3,6 @@
 import Link from 'next/link';
 
 import dynamic from 'next/dynamic';
-import { Preload } from '@/components/Preload';
 
 const Presentation = dynamic(() => import('@/components/Presentation'), { ssr: false });
 
@@ -13,13 +12,13 @@ export default function Home() {
       <Presentation />
       <Link
         prefetch
-        style={{ background: '#00000020' }}
-        className={'absolute top-12 right-2 text-lg flex items-center gap-2 m-1 py-2 px-4 rounded-lg'}
+        className={
+          'absolute top-12 right-2 text-lg flex items-center gap-2 py-2 px-4 rounded-lg border-2 hover:bg-blue-100 bg-white/80 hover:shadow'
+        }
         href={'/demo'}
       >
         Voir démo
       </Link>
-      <Preload />
     </div>
   );
 }

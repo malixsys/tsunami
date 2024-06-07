@@ -2253,7 +2253,7 @@
         "baseColorTexture": {
           "index": 3
         },
-        "metallicFactor": 0.0
+        "metallicFactor": 0.5
       }
     },
     {
