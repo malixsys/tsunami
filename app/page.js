@@ -1,13 +1,5 @@
-import React from "react";
-import {ModelViewer} from "@/components/model-viewer";
-import {UI} from "@/components/UI";
-import {UIContextProvider} from "@/components/UIContext";
+import { redirect } from 'next/navigation'
 
 export default function Home() {
-  return (
-      <UIContextProvider>
-          <ModelViewer/>
-          <UI/>
-      </UIContextProvider>
-  );
+  redirect('/Presentation/index.html')
 }
