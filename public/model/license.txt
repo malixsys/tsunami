@@ -1,0 +1,8 @@
+Model Information:
+* title:	Earthquake and Tsunami
+* source:	https://sketchfab.com/3d-models/earthquake-and-tsunami-5325ba12207c4dada68345e52c35ee38
+* author:	arloopa (https://sketchfab.com/arloopa)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
