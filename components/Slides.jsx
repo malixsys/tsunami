@@ -27,5 +27,5 @@ export function Slides(props) {
     return () => PSPDFKit && PSPDFKit.unload(container);
   }, []);
 
-  return <div ref={containerRef} style={{ width: '100%', height: '100vh' }} />;
+  return <div ref={containerRef} style={{ width: '100%', height: '700px' }} />;
 }

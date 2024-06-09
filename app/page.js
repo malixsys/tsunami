@@ -8,16 +8,18 @@ const Presentation = dynamic(() => import('@/components/Presentation'), { ssr: f
 
 export default function Home() {
   return (
-    <div>
-      <Presentation />
+    <div className="flex flex-col gap-8 items-center justify-center min-h-screen py-2">
       <Link
-        prefetch
-        className={
-          'absolute top-12 right-2 text-lg flex items-center gap-2 py-2 px-4 rounded-lg border-2 hover:bg-blue-100 bg-white/80 hover:shadow'
-        }
-        href={'/demo'}
+        href={'/presentation'}
+        className={'py-2 px-4 rounded-lg border-2 hover:bg-blue-100 bg-white/80 hover:shadow text-3xl'}
       >
-        Voir démo
+        Présentation
+      </Link>
+      <Link
+        href={'/demo'}
+        className={'py-2 px-4 rounded-lg border-2 hover:bg-blue-100 bg-white/80 hover:shadow text-3xl'}
+      >
+        Démo
       </Link>
     </div>
   );
